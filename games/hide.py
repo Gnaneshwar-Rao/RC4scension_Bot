@@ -14,7 +14,7 @@ class Hide(interface.implements(Game)):
     return self.name 
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to get the ball into the opponent’s net (similar to football).\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nn0PBldmA-v8W55IE-4QqqKpDtX-8BJi2VJ7WnDduJI/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is for the hunters to find the props and shoot/throw grenades at them while the props have to avoid getting shoy by the hunters! So CHOOSE your props wisely..\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1MgQN0la2sZO5s5uRmAOh5JxLOLsfibHNNEpMoHucpXI/edit?usp=sharing"
   
   def get_success_code_1(self):
     return 'PROTEAN'

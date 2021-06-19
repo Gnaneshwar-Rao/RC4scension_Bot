@@ -14,7 +14,7 @@ class Agar(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to get the ball into the opponent’s net (similar to football).\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nn0PBldmA-v8W55IE-4QqqKpDtX-8BJi2VJ7WnDduJI/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to control your tiny cell and eat other smaller cells to grow bigger, while at the same time avoiding getting eaten by bigger cells.\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nqpS5bXdMIyVhUYPq-uPnUdxq76JToKCSgz56omi9YQ/edit?usp=sharing"
   
   def get_success_code_1(self):
     return 'ODYSSEY'

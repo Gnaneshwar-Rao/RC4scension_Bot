@@ -14,7 +14,7 @@ class Scatter(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to get the ball into the opponent’s net (similar to football).\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nn0PBldmA-v8W55IE-4QqqKpDtX-8BJi2VJ7WnDduJI/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to fill in answers starting with the given letter for different categories. A point is given to players with valid answers for each category that do not clash with other player’s answers. Player with the most points wins.\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1doAeNV2D74yex5NvrSWZ0Ge0TwTKUuGy0owRVBP8pZU/edit?usp=sharing"
   
   def get_success_code_1(self):
     return 'DIVINE'

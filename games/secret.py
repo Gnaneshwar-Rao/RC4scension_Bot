@@ -14,7 +14,7 @@ class Secret(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to get the ball into the opponent’s net (similar to football).\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nn0PBldmA-v8W55IE-4QqqKpDtX-8BJi2VJ7WnDduJI/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to assume the roles of liberals and fascists in the Reichstag of the Weimar Republic, with one player becoming Hitler. To win the game, both parties are set to competitively enact liberal and fascist policies, respectively, or complete a secondary objective directly involving Hitler.\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1qOwFONVxZtMbqtj7FD-Kd-S352P2BgcN4vhvajaXFh4/edit?usp=sharing"
   
   def get_success_code_1(self):
     return 'NEREID'
