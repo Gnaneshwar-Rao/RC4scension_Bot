@@ -41,7 +41,7 @@ class Game(interface.Interface):
 					message = bot.reply_to(message, "Congratulations!")
 					message = bot.reply_to(message, "Please enter Code 2 (same as Code 1 for this Dry Run 1)")
 					bot.register_next_step_handler(message, self.process_code_2)
-				else:
+				elif code != '/listGames':
 					message = bot.reply_to(message, "That does not seem right :(")
 					message = bot.reply_to(message, "Please enter Code 1")
 					bot.register_next_step_handler(message, self.process_code_1)
