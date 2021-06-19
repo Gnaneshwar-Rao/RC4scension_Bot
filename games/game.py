@@ -24,9 +24,9 @@ class Game(interface.Interface):
 		prompt = self.get_prompt()
 		bot = self.get_bot()
 		try:
-				message = bot.reply_to(message, prompt)
-				message = bot.reply_to(message, "Please enter Code 1")
-				bot.register_next_step_handler(message, self.process_code_1)
+			message = bot.reply_to(message, prompt)
+			message = bot.reply_to(message, "Please enter Code 1")
+			bot.register_next_step_handler(message, self.process_code_1)
 		except Exception as e:
 				bot.reply_to(message, 'oooops')
 
@@ -41,7 +41,12 @@ class Game(interface.Interface):
 					message = bot.reply_to(message, "Congratulations!")
 					message = bot.reply_to(message, "Please enter Code 2 (same as Code 1 for this Dry Run 1)")
 					bot.register_next_step_handler(message, self.process_code_2)
-				elif code != '/listGames':
+				elif code == '/exit':
+					markup = types.ReplyKeyboardMarkup(row_width=1)
+					welcomeOption = types.KeyboardButton(constants.LETS_PLAY_GAME)
+					markup.add(welcomeOption)
+					bot.send_message(message.chat.id, constants.WELCOME_MESSAGE, reply_markup = markup)
+				else:
 					message = bot.reply_to(message, "That does not seem right :(")
 					message = bot.reply_to(message, "Please enter Code 1")
 					bot.register_next_step_handler(message, self.process_code_1)
@@ -61,6 +66,11 @@ class Game(interface.Interface):
 				backButton = types.KeyboardButton(constants.LIST_ALL_GAMES)
 				markup.add(backButton)
 				message = bot.reply_to(message, game_success_text, reply_markup=markup)
+			elif code == '/exit':
+					markup = types.ReplyKeyboardMarkup(row_width=1)
+					welcomeOption = types.KeyboardButton(constants.LETS_PLAY_GAME)
+					markup.add(welcomeOption)
+					bot.send_message(message.chat.id, constants.WELCOME_MESSAGE, reply_markup = markup)
 			else:
 				message = bot.reply_to(message, "That does not seem right :(")
 				message = bot.reply_to(message, "Please enter Code 2 (same as Code 1 for this Dry Run 1)")
