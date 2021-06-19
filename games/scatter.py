@@ -5,7 +5,7 @@ from games.game import Game
 class Scatter(interface.implements(Game)):
   def __init__(self, bot):
     self.bot = bot
-    self.name = constants.GAME_HAXBALL
+    self.name = constants.GAME_SCATTER
 
   def get_bot(self):
     return self.bot

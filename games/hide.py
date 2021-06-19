@@ -5,13 +5,13 @@ from games.game import Game
 class Hide(interface.implements(Game)):
   def __init__(self, bot):
     self.bot = bot
-    self.name = constants.GAME_HAXBALL
+    self.name = constants.GAME_HIDE
 
   def get_bot(self):
     return self.bot
 
   def get_name(self):
-    return self.name
+    return self.name 
 
   def get_prompt(self):
     return "Starting " + self.name + "! \nThe Aim of this Game is to get the ball into the opponent’s net (similar to football).\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1nn0PBldmA-v8W55IE-4QqqKpDtX-8BJi2VJ7WnDduJI/edit?usp=sharing"

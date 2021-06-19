@@ -5,7 +5,7 @@ from games.game import Game
 class Family(interface.implements(Game)):
   def __init__(self, bot):
     self.bot = bot
-    self.name = constants.GAME_HAXBALL
+    self.name = constants.GAME_FAMILY
 
   def get_bot(self):
     return self.bot
