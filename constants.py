@@ -16,6 +16,7 @@ GAME_AGAR = 'AGAR.IO'
 GAME_HIDE = 'HIDE ONLINE'
 GAME_SMASHKARTS = 'SMASHKARTS.IO'
 GAME_JEOPARDY = 'JEOPARDY'
+GAME_WELP = 'WELP'
 LIST_ALL_GAMES = 'Go back to list of games'
 
 def get_game_names():
@@ -31,5 +32,6 @@ def get_game_names():
           GAME_AGAR,
           GAME_HIDE,
           GAME_SMASHKARTS,
-          GAME_JEOPARDY]
+          GAME_JEOPARDY,
+          GAME_WELP]
           
