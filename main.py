@@ -77,7 +77,7 @@ def get_games_list_markup():
   gamesList = constants.get_game_names()
   for game in gamesList:
     markup.add(types.KeyboardButton(game))
-  return markup 
+  return markup
 
 @bot.message_handler(commands=['listGames'])
 def list_games(message):
