@@ -14,7 +14,7 @@ class Codenames(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to clear the cards laid in the grid by suggesting a single word clue that could even clear multiple cards in the grid. BUT BEWARE...if you pick the Black Card you lose the Game, so heed your Spymaster's words!!\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/190S3XEcM4aIcecwHi9lnnbwW6bXyILo4NCQHK771UGs/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to clear the cards laid in the grid by suggesting a single word clue that could even clear multiple cards in the grid. BUT BEWARE...if you pick the Black Card you lose the Game, so heed your Spymaster's words!!\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/190S3XEcM4aIcecwHi9lnnbwW6bXyILo4NCQHK771UGs/edit?usp=sharing \n\nThe Game link is as follows: https://codenames.game/ and it should be run on Zoom"
   
   def get_success_code_1(self):
     return 'GHOUL'

@@ -14,7 +14,7 @@ class Uno(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to put down all cards given to each player..\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1ybEf3NOXLK-U_0E05ZCLMIzVgFLPZIByFw3c2A-OVGM/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to put down all cards given to each player..\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1ybEf3NOXLK-U_0E05ZCLMIzVgFLPZIByFw3c2A-OVGM/edit?usp=sharing \n\nThe Game can be through the Plato app and it should be run on Zoom"
   
   def get_success_code_1(self):
     return 'BASILISK'

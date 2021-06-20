@@ -14,7 +14,7 @@ class Smashkarts(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to protect the King/Queen of your sub-OG, while attacking the King/Queen of opposing sub-OG through KARTS!\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1Bnh7lj1THMsMrcqX03cMETITf5lt7MiKM1EkqgKPkJM/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to protect the King/Queen of your sub-OG, while attacking the King/Queen of opposing sub-OG through KARTS!\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1Bnh7lj1THMsMrcqX03cMETITf5lt7MiKM1EkqgKPkJM/edit?usp=sharing \n\nThe Game link is as follows: https://smashkarts.io/ and it should be run on Zoom"
   
   def get_success_code_1(self):
     return 'PSYCHE'

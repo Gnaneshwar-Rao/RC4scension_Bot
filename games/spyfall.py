@@ -14,7 +14,7 @@ class Spyfall(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to find the spy hiding among the detectives.\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1LAN95t_dBrShSVsH0LsKERBsemn2rfXMdXpXIS-icmo/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to find the spy hiding among the detectives.\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1LAN95t_dBrShSVsH0LsKERBsemn2rfXMdXpXIS-icmo/edit?usp=sharing \n\nThe Game link is as follows: https://www.spyfall.app/ and it should be run on Kumospace with 2 separate even groups"
   
   def get_success_code_1(self):
     return 'CELESTIAL'

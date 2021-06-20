@@ -14,7 +14,7 @@ class Gartic(interface.implements(Game)):
     return self.name
 
   def get_prompt(self):
-    return "Starting " + self.name + "! \nThe Aim of this Game is to come up with a story or a catchphrase which will then be used by another person to draw a picture and another person would have to guess the phrase, and so on...\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1OFSNY7wIuTWCKYabBNvbuzFG1rNc37dfyUDCLQnNw0E/edit?usp=sharing"
+    return "Starting " + self.name + "! \nThe Aim of this Game is to come up with a story or a catchphrase which will then be used by another person to draw a picture and another person would have to guess the phrase, and so on...\nA rough guide to set up the game and the game objectives can be found in the link given below:\nLink : https://docs.google.com/presentation/d/1OFSNY7wIuTWCKYabBNvbuzFG1rNc37dfyUDCLQnNw0E/edit?usp=sharing \n\nThe Game link is as follows: https://garticphone.com/ and it should be run on Zoom"
   
   def get_success_code_1(self):
     return 'DRYAD'
